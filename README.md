@@ -32,7 +32,6 @@ text (str): Message to send.
 
 # Raises:
 Exception: If something bad happens.
-ValueError: If an invalid argument is specified.
 
 # Returns
 response (requests.Response): The response.
