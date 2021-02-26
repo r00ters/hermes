@@ -24,8 +24,7 @@ send_message(token, chat_id, text)
 Send Telegram message to specified `chat_id`.
 
 ```
-# Arguments
-
+# Arguments:
 token (str): Your Telegram Bot Token.
 chat_id (str): Destination chat_id.
 text (str): Message to send.
@@ -33,7 +32,7 @@ text (str): Message to send.
 # Raises:
 Exception: If something bad happens.
 
-# Returns
+# Returns:
 response (requests.Response): The response.
 ```
 
