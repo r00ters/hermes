@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__
+*.py[cod]
+*$py.class
+
+# Python Setuptools distribution folder
+dist
+
+# Python egg metadata, regenerated from source files by setuptools
+build
+*.egg-info
+
+
+# Virtual Environments / Environment variable
+.env
+.venv
+
+# Editor / IDE
+.vscode
+.idea
+
+# Misc
+.DS_Store
+Thumbs.db
