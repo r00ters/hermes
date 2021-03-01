@@ -10,6 +10,7 @@ import re
 
 __all__ = ["send_message"]
 
+
 def send_message(incoming_webhook_url, text):
     """
     Send Slack message to specified `incoming webhook url`.
@@ -19,7 +20,7 @@ def send_message(incoming_webhook_url, text):
 
     incoming_webhook_url (str): Your Slack Incoming Webhook URL.
     text (str): Message to send.
-    
+
     # Raises:
     Exception: If something bad happens.
     ValueError: If incoming_webhook_url is invalid.
@@ -29,7 +30,9 @@ def send_message(incoming_webhook_url, text):
     ```
     """
 
-    if not re.match(r"^https:\/\/hooks\.slack\.com\/services\/T.*\/B.*\/.*", incoming_webhook_url):
+    if not re.match(r"^https:\/\/hooks\.slack\.com\/services\/T.*\/B.*\/.*",
+                    incoming_webhook_url):
+
         raise ValueError("Invalid Incoming Webhook URL")
 
     payload = {
@@ -39,7 +42,7 @@ def send_message(incoming_webhook_url, text):
     try:
         response = requests.post(
             incoming_webhook_url,
-            json = payload
+            json=payload
         )
 
         return response

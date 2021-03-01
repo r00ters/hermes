@@ -9,6 +9,7 @@ import requests
 
 __all__ = ["send_message"]
 
+
 def send_message(token, chat_id, text):
     """
     Send Telegram message to specified `chat_id`.
@@ -19,7 +20,7 @@ def send_message(token, chat_id, text):
     token (str): Your Telegram Bot Token.
     chat_id (str): Destination chat_id.
     text (str): Message to send.
-    
+
     # Raises:
     Exception: If something bad happens.
 
@@ -38,7 +39,7 @@ def send_message(token, chat_id, text):
     try:
         response = requests.post(
             telegram_url,
-            data = payload
+            data=payload
         )
 
         return response
