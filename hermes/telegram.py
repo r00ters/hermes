@@ -1,7 +1,7 @@
 """
 Telgram integration.
 
-    * send_message - Send Telegram message to specified `chat_id
+    * send_message - Send Telegram message to specified `chat_id`
 
 """
 
@@ -22,8 +22,7 @@ def send_message(token, chat_id, text):
     
     # Raises:
     Exception: If something bad happens.
-    ValueError: If an invalid argument is specified.
-    
+
     # Returns
     response (requests.Response): The response.
     ```
